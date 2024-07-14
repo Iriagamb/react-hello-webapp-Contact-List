@@ -104,7 +104,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 					})
 					 if (responde.ok ){
 						alert("Contacto actualizado uwu")
-						actions.getActions():
+						actions.getActions();
 					 }else{
 						alert("No se pudeo actualizar el contacto :c")
 					 }
