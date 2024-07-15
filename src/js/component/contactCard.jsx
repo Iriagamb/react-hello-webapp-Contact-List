@@ -15,7 +15,7 @@ export const Contact = () => {
 	}
 	return (
 		<div>
-			{store.Contacts.length === 0 && <span className="m-5 p-5 text-danger">No existe ningún contacto</span>}
+			{store.Contacts.length == 0 && <span className="m-5 p-5 text-danger">No existe ningún contacto</span>}
 			{store.Contacts.map((contact) => {
 				return (
 					<div key={contact.id} className="row border rounded m-2">
@@ -61,11 +61,11 @@ export const Contact = () => {
 				<div className="modal-dialog">
 					<div className="modal-content">
 						<div className="modal-header">
-							<h1 className="modal-title fs-5" id="exampleModalLabel">Estas segur@?</h1>
+							<h1 className="modal-title fs-5" id="exampleModalLabel">Seguro?</h1>
 							<button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 						</div>
 						<div className="modal-body">
-							Si eliminas no se podra recuperar!!!
+							Si eliminas, te vas a arrepentir
 						</div>
 						<div className="modal-footer">
 							<button type="button" className="btn btn-secondary" data-bs-dismiss="modal">Mejor no</button>
